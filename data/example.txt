@@ -1,0 +1,58 @@
+Ziel
+Das Assistenzsystem unterstützt die Arbeitskraft während des Montageprozesses und liefert präzise Informationen zu den einzelnen Montageschritten. Die Anweisungen sind kurz und prägnant gehalten. Ausführlichere Erklärungen werden nur auf Nachfrage gegeben.
+
+Teileliste
+Keramikzylinder (1x)
+Beschreibung: Keramikzylinder
+
+Metallkappe unten (1x)
+Beschreibung: Metallkappe mit drei M4-Gewindebohrungen
+
+Metallkappe oben (1x)
+Beschreibung: Metallkappe mit drei M4-Senkungen
+
+Schrauben (3x)
+Beschreibung: M4-Schrauben, 80 mm lang
+
+Sondervorrichtung für Teil ZETOR (1x)
+Beschreibung: Speziell angefertigte Montagevorrichtung
+
+Werkzeuge:
+
+M4-Innensechskantschlüssel oder M4-Bit
+
+Elektrischer Schrauber
+
+Arbeitsschritte
+Schritt 1
+Entriegle den mittleren Stift an der Vorrichtung mit dem kleinen schwarzen Hebel. (Hinweis: Der Mechanismus ist durch den Hebel gesichert; das Entriegeln erlaubt das Hochdrücken des Metallstiftes.)
+
+Schritt 2
+Hebe den mittleren Stift an und fixiere ihn mithilfe des schwarzen Hebels.
+
+Schritt 3
+Platziere die untere Metallkappe mit den drei Gewindebohrungen nach oben auf der Vorrichtung. Sie muss exakt ausgerichtet sein und darf nicht mit Druck eingepasst werden.
+
+Schritt 4
+Setze den Keramikzylinder vorsichtig auf die untere Kappe. Die Orientierung des Zylinders ist beliebig, jedoch dürfen sich die Teile nicht verkeilen. Achte darauf, dass die Führungsschiene am Vorrichtungsstift mit der Aussparung in der unteren Platte fluchtet.
+
+Schritt 5
+Platziere die obere Metallkappe mit den drei Senkungen nach oben auf dem Zylinder. Die Teile sollen ohne Verkanten passen. Optional kann mit einem Gummihammer leicht geklopft werden – ein charakteristischer Ton signalisiert den vollständigen Sitz.
+
+Schritt 6
+Drehe die drei Schrauben in die obere Kappe ein und ziehe sie vorsichtig an. Achte darauf, dass sich die Bauteile dabei nicht verkeilen.
+
+Schritt 7
+Senke den Vorrichtungsstift ab, um das fertige Produkt zu entnehmen. Der Stift sollte sich gleichmäßig absenken und die Vorrichtung in die Ausgangsposition zurückführen. Nutze den schwarzen Hebel, um die Vorrichtung zu lösen bzw. zu fixieren.
+
+Zusätzliche Informationen
+Alle Teile müssen exakt ausgerichtet sein, um ein Verkanten während der Montage zu vermeiden.
+
+Der Klopftest mit dem Gummihammer in Schritt 5 dient der Qualitätskontrolle. Ein höherer, weniger dumpfer Ton weist auf eine vollständige Verbindung hin.
+
+Der schwarze Hebel an der Vorrichtung sollte vorsichtig bedient werden, um eine einwandfreie Funktion des Mechanismus sicherzustellen.
+
+Sicherheitshinweise
+Kein übermäßiger Druck beim Platzieren oder Ausrichten der Teile.
+
+Vor jeder Montage sicherstellen, dass sich der Vorrichtungsstift gleichmäßig bewegt, um Beschädigungen zu vermeiden.

@@ -3,6 +3,8 @@ from typing import List
 from chatcomponent import ChatComponent
 from componentresultobject import ComponentResultObject
 import ollama
+import json
+import os
 
 
 class ExkimoStreamlitApp:
@@ -69,13 +71,48 @@ class ExkimoStreamlitApp:
         msg["content"]["original_text"] = content
         return msg
         
+    def read_exchange_json(self) -> dict:
+        """Read the exchange.json file if it exists"""
+        exchange_path = "exchange.json"
+        if os.path.exists(exchange_path):
+            try:
+                with open(exchange_path, 'r', encoding='utf-8') as f:
+                    return json.load(f)
+            except Exception as e:
+                st.warning(f"Fehler beim Lesen von exchange.json: {str(e)}")
+                return {}
+        return {}
+        
+    def format_json_as_text(self, json_data: dict) -> str:
+        """Format JSON data as parameter-value pairs"""
+        if not json_data:
+            return ""
+            
+        lines = []
+        for key, value in json_data.items():
+            lines.append(f"{key}: {value}")
+        return "\n".join(lines)
+        
     def prepare_system_prompt(self) -> ComponentResultObject:
-        """Prepare system prompt with file content if available"""
+        """Prepare system prompt with file content and exchange.json data"""
         system_msg = ComponentResultObject()
         system_msg["source"] = "system"
         
+        prompt_parts = []
+        
+        # Add file content if available
         if st.session_state.file_content:
-            system_msg["content"]["original_text"] = f"Nutze folgende Information als Kontext: {st.session_state.file_content}"
+            prompt_parts.append(f"Nutze folgende Information als Kontext: {st.session_state.file_content}")
+            
+        # Add exchange.json content
+        exchange_data = self.read_exchange_json()
+        if exchange_data:
+            formatted_data = self.format_json_as_text(exchange_data)
+            prompt_parts.append(f"Aktuelle Informationen:\n{formatted_data}")
+            
+        # Combine all parts or use default
+        if prompt_parts:
+            system_msg["content"]["original_text"] = "\n\n".join(prompt_parts)
         else:
             system_msg["content"]["original_text"] = "Du bist ein hilfreicher Assistent."
             
