@@ -12,11 +12,11 @@ def __prepare_llm__(
                 language_model=model[7:],
                 temperature=temperature
             )
-        else:
-            return OllamaChat(
-                language_model=model[7:],
-                temperature=temperature,
-                structured_response=structured_response,
-            )                
+    #    else:
+    #        return OllamaChat(
+    #            language_model=model[7:],
+    #            temperature=temperature,
+    #            structured_response=structured_response,
+    #        )                
     else:
-        raise TypeError("__prepare_llm__: chat model name invalid")
+        raise TypeError(f"__prepare_llm__: chat model name invalid: {model[7:]}")

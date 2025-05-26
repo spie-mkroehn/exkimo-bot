@@ -11,7 +11,7 @@ This component performs an llm operation given the complete chat history
 '''
 class ChatComponent(BaseModel):
     llm: OllamaChat = None
-    language_model: str = "gemma3:4b"
+    language_model: str = "ollama:gemma3:4b"
     temperature: float = 0.0
     structured_response: Dict[str, Any] = None
 
